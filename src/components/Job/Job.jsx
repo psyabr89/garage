@@ -1,16 +1,18 @@
-import styleJob from './Job.module.css'
-import JobWindow from "./JobWindow/JobWindow";
-import Mileage from "./JobWindow/Mileage/Mileage";
+import styleJob from './Job.module.css';
+import Task from './Task/Task';
+import Mileage from "./Mileage/Mileage";
+import Photos from './Photos/Photos';
+import Price from "./Price/Price";
 
-const Job = ()=> {
+const Job =()=>{
     return (
         <div className={styleJob.job}>
-            <JobWindow/>
-            <JobWindow/>
-            <JobWindow/>
-            <JobWindow/>
+            <Task/>
+            <Mileage/>
+            <Photos/>
+            <Price/>
         </div>
-    )
+    );
 };
 
 export default Job;
