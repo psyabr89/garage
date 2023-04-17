@@ -14,16 +14,18 @@ const MyGarage = () => {
     return (
 
     <div className={styleMyGarage.myGarage}>
-        <CarImage/>
-        <MyMileage/>
-        <div className="imageCar">Картинка машины</div>
-      <ul>
-        <li>Мой пробег: {mileage}км</li>
-          <button onClick={onClickPlus}>увеличить пробег</button>
-        <li>проведенная работа</li>
-        <li>проведенная работа</li>
-        <li>проведенная работа</li>
-      </ul>
+        <div className={styleMyGarage.wrapper}>
+            <CarImage/>
+            <MyMileage/>
+            <div className="imageCar">Картинка машины</div>
+            <ul>
+                <li>Мой пробег: {mileage}км</li>
+                <button onClick={onClickPlus}>увеличить пробег</button>
+                <li>проведенная работа</li>
+                <li>проведенная работа</li>
+                <li>проведенная работа</li>
+            </ul>
+        </div>
     </div>
   );
 };

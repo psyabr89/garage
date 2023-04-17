@@ -7,3 +7,5 @@ const Task =()=>{
         </div>
     );
 };
+
+export default Task;
