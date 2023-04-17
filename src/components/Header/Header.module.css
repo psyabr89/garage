@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+.myGarage {
+  background-image: url(./../../img/garageHouse.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  padding-left: 100px;
+  padding-right: 10px;
+}
+
+.doneJob {
+  background-image: url(./../../img/doneJob.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  padding-left: 100px;
+  padding-right: 10px;
+}
+
+.planedJob {
+  background-image: url(./../../img/gear.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  padding-left: 100px;
+  padding-right: 10px;
+}
+
+.about {
+  background-image: url(./../../img/aboutColor.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  padding-left: 100px;
+  padding-right: 10px;
+}
