@@ -1,29 +1,16 @@
-import styleJob from './Job.module.css';
-// import './Job.module.css';
-import Task from './Task/Task';
-import Mileage from "./Mileage/Mileage";
-import Photos from './Photos/Photos';
-import Price from "./Price/Price";
-import ModalWindow from "../ModalWindow/ModalWindow";
+import styleJob from './Job.module.css'
+import JobWindow from "./JobWindow/JobWindow";
+import Mileage from "./JobWindow/Mileage/Mileage";
 
-
-import {useState} from "react";
-
-
-const Job =()=>{
-    const [modalActive, setModalActive] = useState(false);
+const Job = ()=> {
     return (
         <div className={styleJob.job}>
-            <Task/>
-            <Mileage/>
-            <Photos/>
-            <Price/>
-            <button className={styleJob.openBtn}  onClick={()=>setModalActive(true)}>Отредактировать</button>
-            <ModalWindow active={modalActive} setActive={setModalActive}>
-
-            </ModalWindow>
+            <JobWindow/>
+            <JobWindow/>
+            <JobWindow/>
+            <JobWindow/>
         </div>
-    );
+    )
 };
 
 export default Job;
