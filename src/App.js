@@ -1,7 +1,7 @@
 import "./App.css";
 import Header from "./components/Header/Header.jsx";
 // import Body from "./components/Body/Body.jsx";
-import Footer from "./components/Footer/Footer";
+// import Footer from "./components/Footer/Footer";
 import MyGarage from "./components/MyGarage/MyGarage";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import DoneJob from "./components/DoneJob/DoneJob";
