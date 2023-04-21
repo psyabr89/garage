@@ -1,0 +1,20 @@
+.deleteBtn {
+    margin-top: 10px;
+    margin-left: 15px;
+    display: inline-block !important;
+    text-decoration: none !important;
+    background-color: #eaeaea !important;
+    color: #006089 !important;
+    border: 4px solid #fd9736 !important;
+    border-radius: 19px !important;
+    font-size: 14px !important;
+    padding: 10px 50px !important;
+    transition: all 0.4s ease !important;
+}
+.deleteBtn:hover{
+    text-decoration: none !important;
+    background-color: #fd9736 !important;
+    color: #ffeded !important;
+    border-color: #ffffff !important;
+
+}
