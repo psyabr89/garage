@@ -4,7 +4,9 @@ import AddDeleteBtn from "../AddDeleteBtn/AddDeleteBtn";
 
 const DoneJob=()=>{
     const BaseOfDoneJob = [
-
+        {id: 1, task: 'Замена ступицы', mileage: 100000, price: 30000},
+        {id: 2, task: 'Замена тормозов', mileage: 100000, price: 30000},
+        {id: 3, task: 'Замена колес', mileage: 100000, price: 30000},
     ];
     return(
         <div className={styleDoneJob.doneJob}>
