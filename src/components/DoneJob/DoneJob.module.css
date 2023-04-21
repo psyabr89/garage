@@ -1,3 +1,14 @@
 .doneJob {
+    margin: 0 auto;
+    margin-top: 80px;
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    /*justify-content: space-around;*/
+}
 
+.wrapper {
+    display: flex;
+    /*flex-direction: column;*/
+    /*justify-content: space-around;*/
+    width: 80%;
 }
