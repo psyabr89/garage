@@ -1,11 +1,11 @@
-import styleDeleteBtn from './DeleteBtn.module.css';
+import styleAddDeleteBtn from './AddDeleteBtn.module.css';
 
-const DeleteBtn =()=>{
+const AddDeleteBtn =(props)=>{
     return (
-       <button className={styleDeleteBtn.deleteBtn}>
-           delete
-       </button>
+        <button className={styleAddDeleteBtn.deleteBtn} onClick={props.func}>
+            {props.text}
+        </button>
     );
 };
 
-export default DeleteBtn;
+export default AddDeleteBtn;
