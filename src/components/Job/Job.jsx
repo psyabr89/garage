@@ -8,17 +8,18 @@ import ModalWindow from "../ModalWindow/ModalWindow";
 import {useState} from "react";
 import AddDeleteBtn from "../AddDeleteBtn/AddDeleteBtn";
 
-
 const Job =()=> {
     const [modalActive, setModalActive] = useState(false);
+    const [count, setCount]=useState(0);
         return (
             <div className={styleJob.job}>
+                <p> вы кликнули {count} раз</p>
+                <button onClick={()=>{setCount(count+1)}}>NAZHMI!!!</button>
                 <Task/>
                 <Mileage/>
                 <Photos/>
                 <Price/>
-                <button className={styleJob.openBtn} onClick={() => setModalActive(true)}>Отредактировать</button>
-                <ModalWindow active={modalActive} setActive={setModalActive}/>
+                <ModalWindow />
                 <AddDeleteBtn text = {'Delete'}></AddDeleteBtn>
             </div>
         );

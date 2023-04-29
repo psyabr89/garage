@@ -11,7 +11,7 @@ const DoneJob=()=>{
     return(
         <div className={styleDoneJob.doneJob}>
             <h1>Выполненные работы</h1>
-            <AddDeleteBtn text={"Add"}/>
+            {/*<AddDeleteBtn text={"Add"}/>*/}
             <div className={styleDoneJob.wrapper}>
 
                 <Job/>

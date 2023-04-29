@@ -1,34 +1,92 @@
 .modalWindow {
-    height: 100vh;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-    position: fixed;
+    position: fixed; /* Фиксировать положение окна */
+    z-index: 1; /* Поместить окно поверх других элементов */
+    left: 0; /* Позиция слева края окна */
+    top: 0; /* Позиция верхнего края окна */
+    width: 100%; /* Ширина окна */
+    height: 100%; /* Высота окна */
+    background-color: rgba(0, 0, 0, 0.4); /* Прозрачный цвет фона */
+    display: flex; /* Использовать флекс-бокс для выравнивания */
+    align-items: center; /* Выровнять по центру по вертикали */
+    justify-content: center; /* Выровнять по центру по горизонтали */
+}
+.buttonOpenModalWindow {
+    margin-top: 10px;
+    margin-left: 15px;
+    display: inline-block !important;
+    text-decoration: none !important;
+    background-color: #eaeaea !important;
+    color: #006089 !important;
+    border: 4px solid #fd9736 !important;
+    border-radius: 19px !important;
+    font-size: 14px !important;
+    padding: 10px 50px !important;
+    transition: all 0.4s ease !important;
+}
+.buttonOpenModalWindow:hover{
+    text-decoration: none !important;
+    background-color: #fd9736 !important;
+    color: #ffeded !important;
+    border-color: #ffffff !important;
+
+}
+
+.modalContent {
+    background-color: #fefefe; /* Белый цвет окна */
+    padding: 20px; /* Отступы в пикселях */
+    border: 1px solid #888; /* Рамка вокруг окна */
+    width: 80%; /* Ширина окна */
+}
+
+.close {
+    /*position:absolute;*/
+    position: relative;
+    top:0;
+    right:0;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+
+    z-index: 1;
+    margin: 20px auto;
+    cursor: pointer;
+}
+.close:before {
+    content: '+';
+    color: #337AB7;
+    position: absolute;
+    z-index: 2;
+    transform: rotate(45deg);
+    font-size: 50px;
+    line-height: 1;
+    top: -5px;
+    left: 6px;
+    transition: all 0.3s cubic-bezier(0.77, 0, 0.2, 0.85);
+}
+.close:after {
+    content: '';
+    position: absolute;
     top: 0;
     left: 0;
-    display:  flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background: #337AB7;
+    z-index: 1;
+    transition: all 0.3s cubic-bezier(0.77, 0, 0.2, 0.85);
+    transform: scale(0.01);
+}
+.close:hover:after {
+    transform: scale(1);
+}
+.close:hover:before {
+    transform: scale(0.8) rotate(45deg);
+    color: #fff;
 }
 
-.modalWindow.active {
-    opacity: 1;
-    pointer-events: all;
-}
 
-.modalWindowContent {
-    padding: 20px;
-    border-radius: 12px;
-    background-color: white;
-    height: 200px;
-    width: 400px;
 
-    transform: scale(0);
-    transition: 0.4s all;
-}
 
-.modalWindowContent.active {
-    transform:  scale(1);
-}
+
+
 
